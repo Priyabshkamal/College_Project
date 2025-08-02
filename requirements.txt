@@ -9,3 +9,4 @@ tensorflow
 nltk
 mysql-connector-python
 scikit-learn
+autokeras
