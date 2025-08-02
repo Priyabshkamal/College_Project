@@ -7,3 +7,4 @@ bcrypt
 ta
 tensorflow
 nltk
+mysql-connector-python
