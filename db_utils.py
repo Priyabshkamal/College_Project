@@ -1,17 +1,23 @@
-# db_utils.py
 import mysql.connector # Use the MySQL connector library
 import bcrypt # For password hashing
 import streamlit as st
 import os # For environment variables, which is a better practice
 
 # --- MySQL Database Configuration ---
-# IMPORTANT: It is best practice to use environment variables for credentials
-# For demonstration purposes, we will use hardcoded values as requested.
-# For a production application, please store these securely.
-DATABASE_HOST = "localhost" # Assuming MySQL is running on localhost
-DATABASE_USER = "root"
-DATABASE_PASSWORD = "Test@0987"
-DATABASE_NAME = "futurestockai"
+# FIX: Use Streamlit Secrets for cloud deployment and a fallback for local testing
+try:
+    DATABASE_HOST = st.secrets["mysql_db"]["host"]
+    DATABASE_USER = st.secrets["mysql_db"]["user"]
+    DATABASE_PASSWORD = st.secrets["mysql_db"]["password"]
+    DATABASE_NAME = st.secrets["mysql_db"]["database"]
+except KeyError:
+    # This block runs when you are running locally without a secrets.toml file
+    # You should ensure your MySQL is running with these credentials
+    DATABASE_HOST = os.getenv("MYSQL_HOST", "localhost")
+    DATABASE_USER = os.getenv("MYSQL_USER", "root")
+    DATABASE_PASSWORD = os.getenv("MYSQL_PASSWORD", "Test@0987")
+    DATABASE_NAME = os.getenv("MYSQL_DB", "futurestockai")
+
 
 def get_db_connection():
     """
@@ -46,12 +52,13 @@ def init_db():
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DATABASE_NAME}")
         conn.database = DATABASE_NAME
         
-        # FIX: Removed the DROP TABLE command to prevent data from being overwritten
-        # cursor.execute("DROP TABLE IF EXISTS users") 
+        # Drop the table to ensure a clean start with the new schema
+        # This will remove all existing users, so they will need to sign up again.
+        cursor.execute("DROP TABLE IF EXISTS users")
         
         # Create the users table with the 'password' column for bcrypt hash
         cursor.execute('''
-            CREATE TABLE IF NOT EXISTS users (
+            CREATE TABLE users (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 username VARCHAR(255) NOT NULL UNIQUE,
                 email VARCHAR(255) NOT NULL UNIQUE,
@@ -76,7 +83,7 @@ def add_user(username, email, password) -> bool:
         cursor = conn.cursor()
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
         
-        # The INSERT query is already correct
+        # The INSERT query is updated to use the 'password' column
         query = "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)"
         cursor.execute(query, (username, email, hashed_password.decode('utf-8')))
         
@@ -101,7 +108,7 @@ def verify_user(email, password) -> bool:
     
     try:
         cursor = conn.cursor()
-        # The SELECT query is already correct
+        # The SELECT query is updated to use the 'password' column
         query = "SELECT password FROM users WHERE email = %s"
         cursor.execute(query, (email,))
         result = cursor.fetchone()
