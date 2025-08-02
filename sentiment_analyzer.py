@@ -10,6 +10,9 @@ import datetime # NEW IMPORT for date calculations
 NEWSAPI_KEY = "1c4c338a6dc54f17beac7d3ec030a7d0"
 NEWSAPI_BASE_URL = "https://newsapi.org/v2/everything"
 
+# FIX: Import nltk.downloader explicitly to resolve the AttributeError
+import nltk.downloader
+
 # Download VADER lexicon if not already downloaded
 try:
     nltk.data.find('sentiment/vader_lexicon.zip')
@@ -106,4 +109,3 @@ def fetch_news_headlines(query: str, api_key: str, days_back: int = 7) -> list[d
     except Exception as e:
         st.error(f"An unexpected error occurred while fetching news: {e}")
         return []
-
