@@ -4,6 +4,9 @@ import streamlit as st
 import os # For environment variables, which is a better practice
 
 # --- MySQL Database Configuration ---
+# IMPORTANT: It is best practice to use environment variables for credentials
+# For demonstration purposes, we will use hardcoded values as requested.
+# For a production application, please store these securely.
 # FIX: Use Streamlit Secrets for cloud deployment and a fallback for local testing
 try:
     DATABASE_HOST = st.secrets["mysql_db"]["host"]
@@ -52,13 +55,10 @@ def init_db():
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DATABASE_NAME}")
         conn.database = DATABASE_NAME
         
-        # Drop the table to ensure a clean start with the new schema
-        # This will remove all existing users, so they will need to sign up again.
-        cursor.execute("DROP TABLE IF EXISTS users")
-        
-        # Create the users table with the 'password' column for bcrypt hash
+        # FIX: Removed the DROP TABLE command to prevent data from being overwritten
+        # The table is created only if it doesn't exist
         cursor.execute('''
-            CREATE TABLE users (
+            CREATE TABLE IF NOT EXISTS users (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 username VARCHAR(255) NOT NULL UNIQUE,
                 email VARCHAR(255) NOT NULL UNIQUE,
