@@ -16,7 +16,8 @@ import nltk.downloader
 # Download VADER lexicon if not already downloaded
 try:
     nltk.data.find('sentiment/vader_lexicon.zip')
-except nltk.downloader.DownloadError:
+# FIX: Change the exception to LookupError, which is the actual error for a missing resource
+except LookupError:
     nltk.download('vader_lexicon', quiet=True)
 
 @st.cache_resource
