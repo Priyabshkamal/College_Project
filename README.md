@@ -1,6 +1,6 @@
 <!-- Animated Banner -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=F70000&center=true&vCenter=true&width=800&lines=🚀+FutureStockAI+📈;AI-Based+Stock+Market+Prediction+System;Predict+💹+Track+📊+Optimize+💼+Invest+💵" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=F70000&center=true&vCenter=true&width=800&lines=FutureStockAI+-+Stock+Market+Prediction;AI+Powered+Investment+Insights;Predict+Track+Optimize+Invest" alt="Typing SVG" />
 </p>
 
 ---
@@ -97,3 +97,4 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — Predict • Track • Optimize • Invest</b> 💡
 </p>
+
