@@ -4,7 +4,11 @@
   <span style="color:#F70000; text-shadow: 0 0 10px #F70000, 0 0 20px #FF0000, 0 0 30px #FF4500;">
     🚀 FutureStockAI: AI-Based Stock Market Prediction System
 </h1>
+---
 
+<p align="center">
+    ...
+</p>
 
 <!-- Animated Features -->
 <p align="center">
@@ -116,6 +120,7 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — AI-Based Stock Market Prediction System </b> 💡
 </p>
+
 
 
 
