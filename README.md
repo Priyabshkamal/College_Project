@@ -114,8 +114,10 @@ requirements.txt       # Dependencies
 
 <p align="center">
    <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
+  <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
   💡 <b>FutureStockAI — AI-Based Stock Market Prediction System</b> 💡
 </p>
+
 
 
 
