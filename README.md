@@ -1,134 +1,70 @@
-FutureStockAI: AI Based Stock Market Prediction System
-This project is a comprehensive AI-driven web application built with Streamlit, designed to empower users with tools for real-time market analysis, stock price forecasting, and data-backed investment decisions. The application demonstrates proficiency in modern data science libraries and full-stack development principles for a robust user experience.
+# 🚀 **FutureStockAI**: *AI-Powered Stock Market Prediction System*
 
-🌟 Key Features & Technical Highlights
-Optimized AI-Driven Prediction Engine: Utilizes a Long Short-Term Memory (LSTM) deep learning model for time-series forecasting of stock prices.
+> 💹 *Real-time Market Analysis • Stock Price Forecasting • Data-Driven Investment Decisions*
 
-Performance: Optimized the training workflow by reducing the historical data window to 2 years and the number of training epochs to 20, achieving a balance between predictive accuracy and computational efficiency.
+---
 
-Data Caching: Leveraged Streamlit's @st.cache_data and @st.cache_resource decorators to intelligently cache fetched data and the trained model, drastically reducing load times on subsequent interactions.
+## 🌟 **About the Project**
+**FutureStockAI** is a **comprehensive AI-driven web application** built with [Streamlit](https://streamlit.io/), designed to empower users with:
+- 📈 Real-time market insights  
+- 🤖 AI-powered stock price forecasting  
+- 📊 Data-backed portfolio optimization  
 
-Enhanced Real-Time Simulation: The "Live Stock Tracking" feature provides an interactive and dynamic price chart experience.
+It demonstrates **modern data science libraries** + **full-stack development principles** for a **seamless user experience**.  
 
-Methodology: Combines delayed intraday data fetching from yfinance with a stochastic simulation model to produce continuous price movements, creating a realistic live market feel.
+---
 
-Data-Informed Investment Tools: Provides powerful modules for comprehensive market analysis.
+## ✨ **Key Features & Technical Highlights**
 
-Sentiment Analysis: Fetches and analyzes recent news headlines using the NLTK VADER lexicon to gauge market sentiment (Positive, Negative, Neutral).
+### 🧠 **Optimized AI-Driven Prediction Engine**
+- ⚡ Uses **LSTM Deep Learning Model** for time-series forecasting.
+- 📉 **Performance-Optimized:**  
+  - Historical data window reduced to **2 years**  
+  - Training epochs limited to **20**  
+  - Balances **accuracy vs. speed**  
 
-Portfolio Optimization: Suggests optimal stock weights for a given portfolio and risk tolerance, calculating key metrics such as expected annual return and Sharpe Ratio.
+### 💾 **Data Caching**
+- Utilizes `@st.cache_data` & `@st.cache_resource` to:  
+  - 🚀 Speed up repeated loads  
+  - 🗄 Cache **data** + **trained model**
 
-Professional UI/UX: The application features a clean, responsive user interface built on Streamlit, designed for a seamless and intuitive user experience.
+### 📊 **Enhanced Real-Time Simulation**
+- "Live Stock Tracking" with **interactive price charts**  
+- Uses **yfinance delayed intraday data** + stochastic simulation for **realistic market feel**  
 
-🔐 Authentication & Data Storage
-The project uses a custom, secure authentication system.
+### 📰 **Sentiment Analysis**
+- Fetches latest stock news 🗞  
+- Analyzes headlines with **NLTK VADER** to show:  
+  - ✅ Positive  
+  - ⚠️ Negative  
+  - ➖ Neutral sentiment  
 
-Database Schema: The application uses a file-based SQLite database named users.db to store user credentials.
+### 📈 **Portfolio Optimization**
+- Calculates **optimal stock weights** for given risk tolerance  
+- Outputs 📊 **Expected Annual Return** + **Sharpe Ratio**  
 
-Table Name: The table used for user accounts is named users.
+### 🎨 **Professional UI/UX**
+- Clean, responsive Streamlit interface  
+- **User-friendly dashboard navigation**  
 
-Password Security: Passwords are not stored in plain text. Instead, they are securely hashed using the bcrypt library, ensuring that user data remains protected.
+---
 
-🚀 Getting Started
-Follow these instructions to set up and run the application.
+## 🔐 **Authentication & Data Storage**
+- **Secure Login System** 🔑  
+- **Database:** SQLite (`users.db`)  
+- **Table:** `users`  
+- **Password Security:** Hashed with `bcrypt` (no plain text!)  
 
-Prerequisites
-Ensure you have Python 3.8 or a newer version installed on your system.
+---
 
-1. Clone the Repository
-First, clone the project repository from GitHub to your local machine.
+## 🛠 **Getting Started**
 
+### **Prerequisites**
+- Python `3.8+` 🐍
+
+---
+
+### **1️⃣ Clone the Repository**
+```bash
 git clone [your_repository_url_here]
 cd FutureStockAI
-
-
-2. Install Dependencies
-This project uses several key Python libraries. You can install all of them at once using the requirements.txt file.
-
-pip install -r requirements.txt
-
-
-Here are the libraries required for the project:
-
-streamlit
-
-pandas
-
-numpy
-
-plotly
-
-yfinance
-
-bcrypt
-
-ta
-
-tensorflow
-
-nltk
-
-3. Running the Application
-To launch the web application, execute the following command in your terminal from the project's root directory:
-
-streamlit run app.py
-
-
-The application will automatically open in your default web browser.
-
-📂 Project Structure
-app.py: The main application orchestrator, managing the UI, session state, and user flow.
-
-db_utils.py: Contains the core functions for database initialization and user authentication logic.
-
-data_utils.py: Responsible for fetching, cleaning, and preprocessing data for both the prediction model and other modules.
-
-model_trainer.py: Encapsulates the deep learning model (LSTM) building, training, and prediction logic.
-
-sentiment_analyzer.py: Module for performing sentiment analysis on text data.
-
-portfolio_optimizer.py: Handles the mathematical logic for portfolio optimization.
-
-requirements.txt: Lists all project dependencies.
-
-⚙️ Working
-The application is built on a modular architecture, with each component performing a specific task.
-
-Authentication: Upon launching the application, you will be directed to a login/signup interface.
-
-Signup: To create a new account, go to the "Sign Up" tab, enter your details, and click the "Sign Up" button. A new entry will be securely added to the users.db database.
-
-Login: After signing up, go to the "Login" tab, enter your registered email and password, and click the "Login" button. A successful login will set a session state variable, granting you access to the main dashboard.
-
-Dashboard Access: Once logged in, you will be presented with a multi-tab dashboard.
-
-Stock Prediction: To get a price forecast:
-
-Navigate to the "Stock Prediction" tab.
-
-On the sidebar, enter the stock ticker (e.g., AAPL) and adjust the number of days you want to predict.
-
-Click the "Run Stock Prediction" button. The application will fetch the necessary data, train the LSTM model (this may take a moment on the first run), and display the predicted price chart and data table.
-
-Real-Time Simulation: To view live market movements:
-
-Go to the "Live Stock Tracking" tab.
-
-Select a stock ticker from the dropdown menu (e.g., AAPL).
-
-Set your desired refresh interval (in seconds) using the slider.
-
-Click the "Start Live Tracking" button. The chart will begin to update with prices.
-
-Data-Informed Decisions:
-
-Sentiment Analysis: Go to this tab, enter a stock ticker, and click "Fetch & Analyze News Sentiment" to see recent news headlines and their sentiment scores.
-
-Portfolio Optimization: In this tab, enter a list of stock tickers, set your risk tolerance, and click "Optimize Portfolio" to receive suggested asset weights and performance metrics.
-
-Data Persistence: The application uses SQLite to ensure user credentials persist across application launches. All other data, such as prediction results or portfolio settings, is maintained using Streamlit's session state during a single user session.
-
-📝 Important Notes
-Live Data: For this project, a market price simulation is used for the real-time tracking feature. True, low-latency market data requires specialized APIs, which are typically subject to licensing fees.
-
-News API: To enable the news sentiment analysis feature, a free API key from NewsAPI.org is required. You must insert your key into the sentiment_analyzer.py file.
