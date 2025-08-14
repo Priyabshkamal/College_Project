@@ -2,10 +2,6 @@
 <h1 align="center">🚀 FutureStockAI</h1>
 <p align="center">
   <i>AI-Based Stock Market Prediction System 📈</i><br><br>
-  <img src="https://img.shields.io/github/stars/Priyabshkamal/College_Project?color=yellow&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/Priyabshkamal/College_Project?color=brightgreen&style=for-the-badge">
-  <img src="https://img.shields.io/badge/Made%20with-Python-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Framework-Streamlit-ff4b4b?style=for-the-badge&logo=streamlit">
 </p>
 
 ---
@@ -24,7 +20,7 @@ Built using **Streamlit**, it merges **modern AI techniques** with **intuitive U
 | Feature | Details |
 |---------|---------|
 | 🧠 AI-Driven Predictions | LSTM-based time-series forecasting |
-| ⚡ Optimized Performance | 2-year data window, 20 epochs for balance |
+| ⚡ Optimized Performance | 2-year data window, 50 epochs for balance |
 | 💾 Data Caching | `@st.cache_data` & `@st.cache_resource` for faster loads |
 | 📈 Live Tracking | Simulated real-time price movements |
 | 📰 Sentiment Analysis | News headlines processed with NLTK VADER |
@@ -121,18 +117,8 @@ requirements.txt       # Dependencies
   <br><i>Sample Dashboard View</i>
 </p>
 
----
-
-## 💖 **Support the Project**
-<p align="center">
-  <a href="https://github.com/Priyabshkamal/College_Project">
-    <img src="https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge">
-  </a>
-  <a href="https://github.com/Priyabshkamal/College_Project/fork">
-    <img src="https://img.shields.io/badge/🍴-Fork%20on%20GitHub-orange?style=for-the-badge">
-  </a>
-</p>
 
 ---
 
 <p align="center">💡 <b>FutureStockAI — Predict. Track. Optimize. Invest.</b> 💡</p>
+
