@@ -1,8 +1,8 @@
 <!-- Permanent Project Name with Glow -->
+
 <h1 align="center">
   <span style="color:#F70000; text-shadow: 0 0 10px #F70000, 0 0 20px #FF0000, 0 0 30px #FF4500;">
     🚀 FutureStockAI: AI-Based Stock Market Prediction System
-  </span>
 </h1>
 
 ---
@@ -115,8 +115,9 @@ requirements.txt       # Dependencies
 <!-- Cool Stock GIF at the Bottom -->
 <p align="center">
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
-  <br>💡 <b>FutureStockAI — Predict • Track • Optimize • Invest</b> 💡
+  <br>💡 <b>FutureStockAI — AI-Based Stock Market Prediction System </b> 💡
 </p>
+
 
 
 
