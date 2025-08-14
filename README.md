@@ -1,6 +1,5 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWhuM3p1NHF1M2pkc2k1eGFja3l6Z2Mza2E1c3cxbjJkaWxjbnJrOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYt5jPR6QX5pnqM/giphy.gif" width="100%" alt="FutureStockAI Banner"/>
 </p>
 
 <h1 align="center">🚀 FutureStockAI — <i>AI-Based Stock Market Prediction System</i> 📈</h1>
@@ -117,6 +116,7 @@ requirements.txt       # Dependencies
    <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
   💡 <b>FutureStockAI — AI-Based Stock Market Prediction System</b> 💡
 </p>
+
 
 
 
