@@ -6,9 +6,7 @@
 </h1>
 
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=FF10F0&background=000000&center=true&vCenter=true&width=800&lines=✨+Feature+Offers+✨;💹+Stock+Prediction;📰+Sentiment+Analysis;💼+Portfolio+Suggestion;📈+Live+Stock+Tracking" alt="Typing Animation" />
-</p>
+<p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=87CEEB&center=true&vCenter=true&width=800&lines=Feature+Offers;Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking" alt="Typing Animation" /> </p>
 
 
 
@@ -116,6 +114,7 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — AI-Based Stock Market Prediction System </b> 💡
 </p>
+
 
 
 
