@@ -113,10 +113,16 @@ requirements.txt       # Dependencies
 ---
 
 <p align="center">
+  <p align="center">
+  <img src="https://via.placeholder.com/300x150?text=Stock+Chart+Animation" alt="Stock Market Simulation" width="300px"><br>
+  💡 **FutureStockAI — Predict. Track. Optimize. Invest.** 💡
+</p>
+
    <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
   <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
   💡 <b>FutureStockAI — AI-Based Stock Market Prediction System</b> 💡
 </p>
+
 
 
 
