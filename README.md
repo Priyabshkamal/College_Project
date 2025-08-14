@@ -10,8 +10,51 @@
 </p>
 
 <p align="center">
-  <img src="[https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=87CEEB&center=true&vCenter=true&width=800&lines=Feature+Offers;Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=87CEEB¢er=true&vCenter=true&width=800&lines=Feature+Offers;Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking)" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=30&pause=1000&color=FFFFFF&center=true&vCenter=true&width=900&lines=Feature+Offers;Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking&random=false" alt="Typing Animation" class="funky-typing" />
 </p>
+
+<style>
+  .funky-typing {
+    animation: glow 2s ease-in-out infinite alternate, pulse 3s infinite;
+    background: linear-gradient(45deg, #1e90ff, #ff00ff, #00ffcc);
+    background-size: 400%;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .funky-typing:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 60px rgba(255, 0, 255, 0.8);
+  }
+
+  @keyframes glow {
+    0% {
+      background-position: 0% 50%;
+      filter: brightness(100%);
+    }
+    100% {
+      background-position: 400% 50%;
+      filter: brightness(120%);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Optional: Add a sci-fi background */
+  body {
+    background: radial-gradient(circle, #0a0a23, #1b1b32);
+    overflow: hidden;
+  }
+</style>
 
 
 ---
@@ -118,6 +161,7 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — AI-Based Stock Market Prediction System </b> 💡
 </p>
+
 
 
 
