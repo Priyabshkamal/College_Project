@@ -112,7 +112,8 @@ requirements.txt       # Dependencies
 ---
 
 ## 📸 **Screenshots**
-<p align="center">
+<p align="center"><img width="1097" height="653" alt="image" src="https://github.com/user-attachments/assets/d5c704d7-35d2-4ae0-b270-d2f27d597ba4" />
+
   <img src="https://via.placeholder.com/600x300?text=Dashboard+Preview" alt="Dashboard Screenshot" width="80%">
   <br><i>Sample Dashboard View</i>
 </p>
@@ -121,4 +122,5 @@ requirements.txt       # Dependencies
 ---
 
 <p align="center">💡 <b>FutureStockAI — Predict. Track. Optimize. Invest.</b> 💡</p>
+
 
