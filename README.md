@@ -55,4 +55,60 @@ pip install -r requirements.txt
 streamlit, pandas, numpy, plotly, yfinance,
 bcrypt, ta, tensorflow, nltk
 
+Required Libraries:
+
+streamlit
+pandas
+numpy
+plotly
+yfinance
+bcrypt
+ta
+tensorflow
+nltk
+
+▶ Run the Application
+streamlit run app.py
+
+
+💻 The app will automatically open in your default browser! 🌐
+
+📂 Project Structure
+app.py                 # Main app controller
+db_utils.py            # Authentication & DB logic
+data_utils.py          # Data fetching & preprocessing
+model_trainer.py       # LSTM model training & prediction
+sentiment_analyzer.py  # News sentiment analysis
+portfolio_optimizer.py # Portfolio optimization logic
+requirements.txt       # Dependencies
+
+⚙ How It Works
+1️⃣ Authentication Flow
+
+Sign Up: Enter email & password → Stored in users.db (hashed)
+
+Login: Session state activated → Dashboard unlocked
+
+2️⃣ Dashboard Tabs
+
+📈 Stock Prediction: Enter ticker → AI predicts prices
+
+📊 Live Stock Tracking: Select ticker → Real-time chart updates
+
+📰 Sentiment Analysis: Fetch news sentiment for selected stock
+
+💼 Portfolio Optimization: Suggests stock weight allocation
+
+📝 Important Notes
+
+📡 Live market prices here are simulated (real APIs need licenses)
+
+🔑 For news sentiment, get a free API key from NewsAPI.org and add it to sentiment_analyzer.py
+
+📸 Screenshots
+<p align="center"> <img src="https://via.placeholder.com/600x300?text=Dashboard+Preview" alt="Dashboard Screenshot" width="80%"> <br><i>Sample Dashboard View</i> </p>
+💖 Support the Project
+<p align="center"> <a href="https://github.com/YourUsername/FutureStockAI"> <img src="https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge"> </a> <a href="https://github.com/YourUsername/FutureStockAI/fork"> <img src="https://img.shields.io/badge/🍴-Fork%20on%20GitHub-orange?style=for-the-badge"> </a> </p>
+<p align="center">💡 <b>FutureStockAI — Predict. Track. Optimize. Invest.</b> 💡</p> ```
+
 
