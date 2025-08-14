@@ -3,8 +3,11 @@
   <span style="color:#F70000; text-shadow: 0 0 10px #F70000, 0 0 20px #FF0000, 0 0 30px #FF4500;">
     🚀 FutureStockAI 📈
   </span>
+  <p align="center">
+  <i>AI-Based Stock Market Prediction System 📈</i><br><br>
 </h1>
-
+</p>
+---
 <!-- Animated Features -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=FFD700&center=true&vCenter=true&width=800&lines=Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking" alt="Typing Animation" />
@@ -105,5 +108,6 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — Predict • Track • Optimize • Invest</b> 💡
 </p>
+
 
 
