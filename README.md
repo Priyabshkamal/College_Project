@@ -120,7 +120,8 @@ requirements.txt       # Dependencies
 
 ---
 
-<p align="center">💡 <b>FutureStockAI — Predict. Track. Optimize. Invest.</b> 💡</p>
+<p align="center">💡 <b>FutureStockAI — AI-Based Stock Market Prediction System.</b> 💡</p>
+
 
 
 
