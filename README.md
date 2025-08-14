@@ -1,35 +1,36 @@
-<!-- Title with badges -->
-<h1 align="center">🚀 FutureStockAI</h1>
+<!-- Banner -->
 <p align="center">
-  <i>AI-Based Stock Market Prediction System 📈</i><br><br>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWhuM3p1NHF1M2pkc2k1eGFja3l6Z2Mza2E1c3cxbjJkaWxjbnJrOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYt5jPR6QX5pnqM/giphy.gif" width="100%" alt="FutureStockAI Banner"/>
 </p>
+
+<h1 align="center">🚀 FutureStockAI — <i>AI-Based Stock Market Prediction System</i> 📈</h1>
 
 ---
 
-## 🌟 **About the Project**
+## 🌟 About the Project
 **FutureStockAI** is a **comprehensive AI-powered web app** designed to:
 - 🔍 Analyze real-time stock market data  
 - 🤖 Predict stock prices using AI  
 - 📊 Optimize investment portfolios  
 
-Built using **Streamlit**, it merges **modern AI techniques** with **intuitive UI design** for both casual investors & professionals.
+Built with **Streamlit**, combining **modern AI techniques** with **intuitive UI design** for both casual investors & professionals.
 
 ---
 
-## ✨ **Key Features**
-| Feature | Details |
-|---------|---------|
-| 🧠 AI-Driven Predictions | LSTM-based time-series forecasting |
-| ⚡ Optimized Performance | 2-year data window, 50 epochs for balance |
-| 💾 Data Caching | `@st.cache_data` & `@st.cache_resource` for faster loads |
-| 📈 Live Tracking | Simulated real-time price movements |
-| 📰 Sentiment Analysis | News headlines processed with NLTK VADER |
-| 💼 Portfolio Optimization | Suggests stock weights + Sharpe Ratio |
-| 🎨 Pro UI/UX | Sleek, responsive Streamlit dashboard |
+## ✨ Key Features
+| 🚀 Feature | 💡 Details |
+|------------|------------|
+| 🧠 **AI-Driven Predictions** | LSTM-based time-series forecasting |
+| ⚡ **Optimized Performance** | 2-year data window, 20 epochs for balance |
+| 💾 **Data Caching** | `@st.cache_data` & `@st.cache_resource` for faster loads |
+| 📈 **Live Tracking** | Simulated real-time price movements |
+| 📰 **Sentiment Analysis** | News headlines processed with NLTK VADER |
+| 💼 **Portfolio Optimization** | Suggests stock weights + Sharpe Ratio |
+| 🎨 **Pro UI/UX** | Sleek, responsive Streamlit dashboard |
 
 ---
 
-## 🔐 **Authentication & Security**
+## 🔐 Authentication & Security
 - **Database:** SQLite (`users.db`)
 - **Table:** `users`
 - **Passwords:** Securely hashed via `bcrypt`  
@@ -37,10 +38,8 @@ Built using **Streamlit**, it merges **modern AI techniques** with **intuitive U
 
 ---
 
-## 🛠 **Getting Started**
+## 🛠 Getting Started
 **Prerequisite:** Python `3.8+` 🐍
-
----
 
 ### 1️⃣ Clone the Repo
 ```bash
@@ -48,14 +47,11 @@ git clone https://github.com/Priyabshkamal/College_Project.git
 cd FutureStockAI
 ```
 
----
-
 ### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-📦 **Required Libraries:**
+📦 **Libraries Used:**
 ```
 streamlit
 pandas
@@ -68,17 +64,15 @@ tensorflow
 nltk
 ```
 
----
-
 ### 3️⃣ Run the Application
 ```bash
 streamlit run app.py
 ```
-💻 *The app will automatically open in your default browser!* 🌐
+💻 *Opens automatically in your default browser!*
 
 ---
 
-## 📂 **Project Structure**
+## 📂 Project Structure
 ```plaintext
 app.py                 # Main app controller
 db_utils.py            # Authentication & DB logic
@@ -91,37 +85,35 @@ requirements.txt       # Dependencies
 
 ---
 
-## ⚙ **How It Works**
-
+## ⚙ How It Works
 ### 1️⃣ Authentication Flow
-- **Sign Up:** Enter email & password → Stored in `users.db` (hashed)  
-- **Login:** Session state activated → Dashboard unlocked  
+- Sign Up → Email & Password stored in `users.db` (hashed)
+- Login → Session state activated → Dashboard unlocked
 
 ### 2️⃣ Dashboard Tabs
-- 📈 **Stock Prediction:** Enter ticker → AI predicts prices  
-- 📊 **Live Stock Tracking:** Select ticker → Real-time chart updates  
-- 📰 **Sentiment Analysis:** Fetch news sentiment for selected stock  
-- 💼 **Portfolio Optimization:** Suggests stock weight allocation  
+- 📈 Stock Prediction: Enter ticker → AI predicts prices
+- 📊 Live Stock Tracking: Select ticker → Real-time chart updates
+- 📰 Sentiment Analysis: Fetch news sentiment for selected stock
+- 💼 Portfolio Optimization: Suggests stock weight allocation
 
 ---
 
-## 📝 **Important Notes**
-- 📡 *Live market prices here are simulated (real APIs need licenses)*  
-- 🔑 For news sentiment, get a free API key from [NewsAPI.org](https://newsapi.org/) and add it to `sentiment_analyzer.py`  
-
----
-
-## 📸 **Screenshots**
-<p align="center"><img width="1097" height="653" alt="image" src="https://github.com/user-attachments/assets/d5c704d7-35d2-4ae0-b270-d2f27d597ba4" />
+## 📸 Screenshots & Previews
+<p align="center">
+  <br><i><b>Sample Dashboard View</b></i>
   
-  <br><i>Sample Dashboard View</i>
+  <img width="1097" height="653" alt="image" src="https://github.com/user-attachments/assets/3ed5fe8e-abd4-4456-9e0c-21d8b5f3db09" />
 </p>
 
+---
+
+## 📝 Notes
+- 📡 *Live market prices are simulated (real APIs need licenses)*  
+- 🔑 For sentiment analysis, get an API key from [NewsAPI.org](https://newsapi.org/) and add it to `sentiment_analyzer.py`
 
 ---
 
-<p align="center">💡 <b>FutureStockAI — AI-Based Stock Market Prediction System.</b> 💡</p>
-
-
-
-
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="300px"><br>
+  💡 <b>FutureStockAI — AI-Based Stock Market Prediction System</b> 💡
+</p>
