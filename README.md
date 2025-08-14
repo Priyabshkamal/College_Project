@@ -114,7 +114,8 @@ requirements.txt       # Dependencies
 ---
 
 <p align="center">
-   <img src="assets/stock-animation.gif" alt="Real-Time Stock Simulation" width="300px"><br>
+   <img src="https://via.placeholder.com/300x150?text=Stock+Chart+Animation" alt="Stock Market Simulation" width="300px"><br>
   💡 <b>FutureStockAI — AI-Based Stock Market Prediction System</b> 💡
 </p>
+
 
