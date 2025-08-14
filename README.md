@@ -5,16 +5,7 @@
     🚀 FutureStockAI: AI-Based Stock Market Prediction System
 </h1>
 
-<!-- Animated Features with Intro & Glow -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=28&duration=2000&pause=1500&color=FFD700&center=true&vCenter=true&width=900&lines=✨+Features+Offered+✨;💹+Stock+Prediction;📰+Sentiment+Analysis;💼+Portfolio+Suggestion;📈+Live+Stock+Tracking" alt="Glowing Typing Animation" />
-</p>
-
-<!-- Optional Glow Effect for Extra Funk -->
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="400px" alt="Glowing Stock Animation">
-</p>
-
+<!-- Animated Features --> <p align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1500&color=FFD700&center=true&vCenter=true&width=800&lines=Stock+Prediction;Sentiment+Analysis;Portfolio+Suggestion;Live+Stock+Tracking" alt="Typing Animation" /> </p>
 
 ---
 
@@ -120,6 +111,7 @@ requirements.txt       # Dependencies
   <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="400px" alt="Stock Market Animation">
   <br>💡 <b>FutureStockAI — AI-Based Stock Market Prediction System </b> 💡
 </p>
+
 
 
 
